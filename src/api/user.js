@@ -3,7 +3,7 @@ import {baseUrl} from '@/config/env';
 import website from "@/config/website";
 
 export const loginByUsername = (tenantId, account, password, type, key, code) => request({
-  url: '/api/blade-auth/token',
+  url: '/api/kaleidoscope-auth/token',
   method: 'post',
   headers: {
     'Captcha-Key': key,
@@ -19,7 +19,7 @@ export const loginByUsername = (tenantId, account, password, type, key, code) =>
 });
 
 export const getButtons = () => request({
-  url: '/api/blade-system/menu/buttons',
+  url: '/api/kaleidoscope-system/menu/buttons',
   method: 'get'
 });
 
@@ -34,12 +34,12 @@ export const refeshToken = () => request({
 })
 
 export const getMenu = () => request({
-  url: '/api/blade-system/menu/routes',
+  url: '/api/kaleidoscope-system/menu/routes',
   method: 'get'
 });
 
 export const getCaptcha = () => request({
-  url: '/api/blade-auth/captcha',
+  url: '/api/kaleidoscope-auth/captcha',
   method: 'get'
 });
 

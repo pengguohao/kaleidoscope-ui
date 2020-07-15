@@ -2,7 +2,7 @@ import request from '@/router/axios';
 
 export const getList = (current, size, params) => {
   return request({
-    url: '/api/blade-system/tenant/list',
+    url: '/api/kaleidoscope-system/tenant/list',
     method: 'get',
     params: {
       ...params,
@@ -13,7 +13,7 @@ export const getList = (current, size, params) => {
 }
 export const remove = (ids) => {
   return request({
-    url: '/api/blade-system/tenant/remove',
+    url: '/api/kaleidoscope-system/tenant/remove',
     method: 'post',
     params: {
       ids,
@@ -23,7 +23,7 @@ export const remove = (ids) => {
 
 export const add = (row) => {
   return request({
-    url: '/api/blade-system/tenant/submit',
+    url: '/api/kaleidoscope-system/tenant/submit',
     method: 'post',
     data: row
   })
@@ -31,7 +31,7 @@ export const add = (row) => {
 
 export const update = (row) => {
   return request({
-    url: '/api/blade-system/tenant/submit',
+    url: '/api/kaleidoscope-system/tenant/submit',
     method: 'post',
     data: row
   })

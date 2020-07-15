@@ -2,7 +2,7 @@ import request from '@/router/axios';
 
 export const getList = (current, size, params) => {
   return request({
-    url: '/api/blade-user/list',
+    url: '/api/kaleidoscope-user/list',
     method: 'get',
     params: {
       ...params,
@@ -13,7 +13,7 @@ export const getList = (current, size, params) => {
 }
 export const remove = (ids) => {
   return request({
-    url: '/api/blade-user/remove',
+    url: '/api/kaleidoscope-user/remove',
     method: 'post',
     params: {
       ids,
@@ -23,7 +23,7 @@ export const remove = (ids) => {
 
 export const add = (row) => {
   return request({
-    url: '/api/blade-user/submit',
+    url: '/api/kaleidoscope-user/submit',
     method: 'post',
     data: row
   })
@@ -31,7 +31,7 @@ export const add = (row) => {
 
 export const update = (row) => {
   return request({
-    url: '/api/blade-user/update',
+    url: '/api/kaleidoscope-user/update',
     method: 'post',
     data: row
   })
@@ -39,7 +39,7 @@ export const update = (row) => {
 
 export const grant = (userIds, roleIds) => {
   return request({
-    url: '/api/blade-user/grant',
+    url: '/api/kaleidoscope-user/grant',
     method: 'post',
     params: {
       userIds,
@@ -50,7 +50,7 @@ export const grant = (userIds, roleIds) => {
 
 export const getUser = (id) => {
   return request({
-    url: '/api/blade-user/detail',
+    url: '/api/kaleidoscope-user/detail',
     method: 'get',
     params: {
       id,
@@ -60,14 +60,14 @@ export const getUser = (id) => {
 
 export const getUserInfo = () => {
   return request({
-    url: '/api/blade-user/info',
+    url: '/api/kaleidoscope-user/info',
     method: 'get',
   })
 }
 
 export const resetPassword = (userIds) => {
   return request({
-    url: '/api/blade-user/reset-password',
+    url: '/api/kaleidoscope-user/reset-password',
     method: 'post',
     params: {
       userIds,
@@ -77,7 +77,7 @@ export const resetPassword = (userIds) => {
 
 export const updatePassword = (oldPassword, newPassword, newPassword1) => {
   return request({
-    url: '/api/blade-user/update-password',
+    url: '/api/kaleidoscope-user/update-password',
     method: 'post',
     params: {
       oldPassword,
