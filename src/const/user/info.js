@@ -16,7 +16,7 @@ export default {
           text: 'blade',
           ratio: 0.1
         },
-        action: '/api/blade-resource/oss/endpoint/put-file',
+        action: '/api/kaleidoscope-resource/oss/endpoint/put-file',
         tip: '只能上传jpg/png用户头像，且不超过500kb',
         span: 12,
         row: true,

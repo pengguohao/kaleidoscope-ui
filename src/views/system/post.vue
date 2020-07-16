@@ -67,7 +67,7 @@
               label: "所属租户",
               prop: "tenantId",
               type: "tree",
-              dicUrl: "/api/blade-system/tenant/select",
+              dicUrl: "/api/kaleidoscope-system/tenant/select",
               addDisplay: false,
               editDisplay: false,
               viewDisplay: website.tenantMode,
@@ -87,7 +87,7 @@
               label: "岗位类型",
               prop: "category",
               type: "select",
-              dicUrl: "/api/blade-system/dict/dictionary?code=post_category",
+              dicUrl: "/api/kaleidoscope-system/dict/dictionary?code=post_category",
               props: {
                 label: "dictValue",
                 value: "dictKey"

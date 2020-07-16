@@ -181,7 +181,7 @@
               label: "所属租户",
               prop: "tenantId",
               type: "tree",
-              dicUrl: "/api/blade-system/tenant/select",
+              dicUrl: "/api/kaleidoscope-system/tenant/select",
               props: {
                 label: "tenantName",
                 value: "tenantId"
@@ -352,7 +352,7 @@
                 res: 'data'
               },
               tip: '请上传 .xls,.xlsx 标准格式文件',
-              action: "/api/blade-user/import-user"
+              action: "/api/kaleidoscope-user/import-user"
             },
             {
               label: '模板下载',
@@ -547,11 +547,11 @@
           type: "warning"
         }).then(() => {
           const searchForm = this.$refs.crud.searchForm;
-          window.open(`/api/blade-user/export-user?blade-auth=${getToken()}&account=${searchForm.account}&realName=${searchForm.realName}`);
+          window.open(`/api/kaleidoscope-user/export-user?kaleidoscope-auth=${getToken()}&account=${searchForm.account}&realName=${searchForm.realName}`);
         });
       },
       handleTemplate() {
-        window.open(`/api/blade-user/export-template?blade-auth=${getToken()}`);
+        window.open(`/api/kaleidoscope-user/export-template?kaleidoscope-auth=${getToken()}`);
       },
       beforeOpen(done, type) {
         if (["edit", "view"].includes(type)) {

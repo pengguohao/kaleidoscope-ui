@@ -123,7 +123,7 @@
               label: "区划等级",
               prop: "level",
               type: "radio",
-              dicUrl: "/api/blade-system/dict/dictionary?code=region",
+              dicUrl: "/api/kaleidoscope-system/dict/dictionary?code=region",
               props: {
                 label: "dictValue",
                 value: "dictKey"
@@ -172,7 +172,7 @@
                 value: 'code'
               },
               cascaderItem: ['city', 'district'],
-              dicUrl: '/api/blade-system/region/select',
+              dicUrl: '/api/kaleidoscope-system/region/select',
               span: 24,
             },
             {
@@ -184,7 +184,7 @@
                 value: 'code'
               },
               dicFlag: false,
-              dicUrl: '/api/blade-system/region/select?code={{key}}',
+              dicUrl: '/api/kaleidoscope-system/region/select?code={{key}}',
               span: 24,
             },
             {
@@ -196,7 +196,7 @@
                 value: 'code'
               },
               dicFlag: false,
-              dicUrl: '/api/blade-system/region/select?code={{key}}',
+              dicUrl: '/api/kaleidoscope-system/region/select?code={{key}}',
               span: 24,
             }
           ]
@@ -210,7 +210,7 @@
       'excelForm.isCovered'() {
         if (this.excelForm.isCovered !== '') {
           const column = this.findObject(this.excelOption.column, "excelFile");
-          column.action = `/api/blade-system/region/import-region?isCovered=${this.excelForm.isCovered}`;
+          column.action = `/api/kaleidoscope-system/region/import-region?isCovered=${this.excelForm.isCovered}`;
         }
       }
     },

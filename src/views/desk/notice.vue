@@ -74,7 +74,7 @@
             {
               label: "通知类型",
               type: "select",
-              dicUrl: "/api/blade-system/dict/dictionary?code=notice",
+              dicUrl: "/api/kaleidoscope-system/dict/dictionary?code=notice",
               props: {
                 label: "dictValue",
                 value: "dictKey"

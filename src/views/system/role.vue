@@ -101,7 +101,7 @@
               label: "所属租户",
               prop: "tenantId",
               type: "tree",
-              dicUrl: "/api/blade-system/tenant/select",
+              dicUrl: "/api/kaleidoscope-system/tenant/select",
               addDisplay: false,
               editDisplay: false,
               viewDisplay: website.tenantMode,
