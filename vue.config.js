@@ -33,6 +33,7 @@ module.exports = {
           '^/api': '/'
         }
       }
-    }
-  }
+    },
+    disableHostCheck: true,
+  },
 }

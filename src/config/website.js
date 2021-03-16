@@ -3,7 +3,7 @@
  */
 export default {
   title: "Kaleidoscope",
-  indexTitle: 'Saber Admin',
+  indexTitle: 'KALEIDOSCOPE',
   clientId: 'saber', // 客户端id
   clientSecret: 'saber_secret', // 客户端密钥
   tenantMode: false, // 是否开启租户模式
